@@ -1,3 +1,4 @@
+.tw-tweetCard,
 .tw-followCard {
   display: flex;
   align-items: center;
@@ -6,6 +7,7 @@
   justify-content: space-between;
 }
 
+.tw-tweetCard-header,
 .tw-followCard-header {
   display: flex;
   align-items: center;

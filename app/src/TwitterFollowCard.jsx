@@ -1,6 +1,16 @@
 import { useState } from "react";
 
 // Props son los argumentos que se pasan a un componente de React
+
+/**
+ * Renderiza un componente de tarjeta de seguimiento de Twitter
+ * 
+ * @param {string} children - El nombre del usuario
+ * @param {string} userName - El nombre de usuario de Twitter
+ * @param {boolean} initialIsFollowing - Si el usuario está siguiendo o no al usuario 
+ * 
+ * @returns {JSX.Element} - El componente de tarjeta de seguimiento de Twitter
+ */
 export function TwitterFollowCard({ children, userName, initialIsFollowing }) {
 
     const [isFollowing, setIsFollowing] = useState(initialIsFollowing);
