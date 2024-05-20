@@ -20,19 +20,22 @@ export function TwitterTweetsCard({ children, tweetTitle, tweetContent, initialI
                     alt="El Avatar del usuario"
                     src={`https://unavatar.io/${tweetTitle}`}
                 />
+
+            </header>
+
+            <aside>
                 <div className='tw-followCard-info'>
                     <strong>{children}</strong>
                     <span className='tw-followCard-infoUserName'>@{tweetTitle}</span>
                 </div>
 
-            </header>
-
-            <aside>
                 <p className="tw-tweetCard-content">{tweetContent}</p>
-                <button className={buttonClassName} onClick={handleClick}>
-                    <span className="tw-tweetCard-text">Favorito</span>
-                </button>
+
             </aside>
+
+            <button className={buttonClassName} onClick={handleClick}>
+                <span className="tw-tweetCard-text">💞</span>
+            </button>
 
         </article>
     )
