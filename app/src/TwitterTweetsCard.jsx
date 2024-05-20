@@ -1,15 +1,15 @@
 import { useState } from "react";
 
-export function TwitterTweetsCard({ children, tweetTitle, tweetContent, isFavorite }) {
+export function TwitterTweetsCard({ children, tweetTitle, tweetContent, initialIsFavorite }) {
 
-    const [isFavoriteTweet, setIsFavoriteTweet] = useState(isFavorite);
+    const [isFavoriteTweet, setIsFavoriteTweet] = useState(initialIsFavorite);
 
-    const buttonClassName = isFavorite
+    const buttonClassName = isFavoriteTweet
         ? 'tw-tweet-button is-favourite'
         : 'tw-tweet-button';
 
     const handleClick = () => {
-        setIsFavoriteTweet(!isFavorite);
+        setIsFavoriteTweet(!isFavoriteTweet);
     }
 
     return (
